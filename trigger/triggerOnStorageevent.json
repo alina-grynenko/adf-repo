@@ -1,0 +1,25 @@
+{
+	"name": "triggerOnStorageevent",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "alinapipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/csvdata/blobs/twig",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/d06a2c4d-884f-4ee9-b60d-be0cbedb1737/resourceGroups/group1/providers/Microsoft.Storage/storageAccounts/alinads",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

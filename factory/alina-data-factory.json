@@ -1,0 +1,9 @@
+{
+	"name": "alina-data-factory",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "070768aa-facc-43de-969f-bfd8fef72eaf",
+		"tenantId": "2654a8a0-11c9-4a1f-8d0a-1125f5e81496"
+	}
+}

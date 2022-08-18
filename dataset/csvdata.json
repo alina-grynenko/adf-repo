@@ -1,0 +1,57 @@
+{
+	"name": "csvdata",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "twig.csv",
+				"container": "csvdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Red Active",
+				"type": "String"
+			},
+			{
+				"name": "Red Finished",
+				"type": "String"
+			},
+			{
+				"name": "Blue Active",
+				"type": "String"
+			},
+			{
+				"name": "Blue Finished",
+				"type": "String"
+			},
+			{
+				"name": "Green",
+				"type": "String"
+			},
+			{
+				"name": "Done",
+				"type": "String"
+			},
+			{
+				"name": "Blocked Days",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
